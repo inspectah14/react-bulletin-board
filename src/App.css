@@ -6,19 +6,56 @@ html {
   background: cornflowerblue;
 }
 
+.hidden {
+  display: none;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin: 10px 0 20px 0;
+}
+
+h1 {
+  margin-bottom: 10px;
 }
 
 .bulletin-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .post-container {
-  height: 150px;
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   border: darkblue 2px solid;
+  border-radius: 5px;
+  background: floralwhite;
   margin: 20px;
+  height: 300px;
+  width: 350px;
+  padding: 10px;
+}
+
+.like-btn {
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.like-btn:hover {
+  cursor: pointer;
+  background: floralwhite;
+}
+
+.like-text {
+  font-weight: 700;
 }

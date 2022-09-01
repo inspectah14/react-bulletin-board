@@ -1,9 +1,12 @@
+import PostLiked from "./PostLiked";
+
 const ReactPost = (props) => {
+  const { question, answer } = props;
   return (
     <div className="post-container">
-      <h4> {props.question} </h4>
-      <p> {props.answer} </p>
-      <button> Like </button>
+      <h4> {question} </h4>
+      <p> {answer} </p>
+      <PostLiked />
     </div>
   );
 };
